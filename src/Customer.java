@@ -1,17 +1,17 @@
 public class Customer {
+    private String customerId;
     private String name;
-    private long aadhaarNumber;
 
-    public Customer(String name, long aadhaarNumber) {
+    public Customer(String customerId, String name) {
+        this.customerId = customerId;
         this.name = name;
-        this.aadhaarNumber = aadhaarNumber;
     }
 
     public String getName() {
         return name;
     }
 
-    public long getAadhaarNumber() {
-        return aadhaarNumber;
+    public String getCustomerId() {
+        return customerId;
     }
 }
